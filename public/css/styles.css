@@ -1,0 +1,358 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+div.top-header p{
+    font-size: 18px;
+    cursor:default;
+}
+
+div.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 10px 20px;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+/*header div.logo,
+header .nav-form{
+    font-size: 24px;
+    position: relative;
+    right: -22%;
+    width: 25%;
+}*/
+header div.logo {
+    position: relative;
+    width: 240px;
+    height: auto;
+    right: 0%;
+}
+header .nav-form {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 18px;
+    position: relative;
+}
+
+/* NAV BAR --------------------------------*/
+.nav-container{
+    display: none;
+}
+/* texto al lado de la lupa*/
+header .nav-form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    width: 200px;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .nav-form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 19px;
+    height: 22px;
+}
+/* burger menu*/
+div.burger-menu{
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 5px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+/* REGISTER Y LOGIN */
+.login{
+    background: gray;
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    height: 70vh;
+}
+
+.register{
+    background: gray;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    height: 90vh;
+}
+.login p,
+.register p{
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    right: 20px;
+}
+
+.login-form{
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 320px;
+    align-items: center;
+    padding: 15px 0 15px 0;
+    justify-content: space-evenly;
+
+}
+
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+main section div.products article i{
+    transition: transform 1s;
+}
+
+main section div.products article:hover i{
+    transform: rotate(-90deg);
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+main section article:hover .description{
+    display: block;
+}
+
+.login input[type='submit']:hover,
+.register input[type='submit']:hover{
+    background-color: #0022AA;
+}
+
+footer{
+    margin-top: 10px;
+}
+footer section i {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 5% 10% 5% 19%;
+    color:blue;
+}
+footer section i:hover{
+    color:orange
+}
+.info-slide-container{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+    flex-grow: 2;
+    width: 100%;
+}
+.info-slide{
+    width: 100%;
+    position: relative;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.info-slide i{
+    font-size: 2em;
+    padding: 0 10% 0 10%;
+
+}
+.info-slide span{
+    margin-left: -80px;
+    padding: 5px 10px 0 10px;
+    text-align: center;
+    text-justify: auto;
+    font-size: 16px;
+    color: gray;
+    width: 65%;
+    display: block;
+    position: relative;
+}
+.info-slide-header{
+    display: flex;
+    color: #000000;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 1.4;
+    width: 300px;
+    margin: 16px 0 0 -50px;
+}
+#copyright{
+    display: flex;
+    padding-top: 30px;
+}
+
+@media (min-width: 361px){
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px){
+    .burger-menu{
+        display: none;
+    }
+    .nav-container{
+        display:none;
+    }
+    
+    header nav{
+        display:flex;
+        font-size: 12px;
+        margin-left: 20px;
+        justify-content: space-between;
+    }
+    
+    header ul{
+        display: flex;
+        list-style-type: none;
+    }
+    
+    header ul li a{
+        text-decoration: none;
+        color: gray;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 100;
+        transition: all 300ms;
+    }
+    header ul li a:hover{
+        color:#000;
+        font-weight: 300;
+    }
+    
+    .nav-container{
+        display: flex;
+    }
+    main section div.products article{
+        width: 22%;
+    }
+}
+
+@media (min-width: 1182px){
+    .info-slide-container{
+        flex-direction: row;
+}
+}
